@@ -1,22 +1,23 @@
 import java.util.Arrays; 
 
 public class Practice{
-    double time;
-    double[] planner = new Array[7];
+    double[] planner = new double[4];
 
-    public Practice(int time){
-        this.time = time;
+
+    public Practice(double[] scheduele){
+        planner = scheduele;
     }
 
     public static void main(String[] args){
-        //Setting the schedule
-        Practice mondayPractice = new Practice(6.00);
-        Practice tuesdayPractice = new Practice(6.00);
-        Practice wednesdayPractice = new Practice(5.15);
-        Practice thursdayPractice = new Practice(5.15);
-        planner.add(mondayPractice);
-        System.out.println(mondayPractice.time + " PM is when practice will be held.");
-        System.out.println("Hello World!");
+        // double practiceTime;
+        // planner[0] = 6.0;
+        // planner[1] = 6.0;
+        // planner[2] = 5.0;
+        // planner[3] = 4.4;
+        
+        Practice footballPractice = new Practice(planner);
+        System.out.println(footballPractice.planner);
+        // System.out.println("Hello World!");
 
     }
 
